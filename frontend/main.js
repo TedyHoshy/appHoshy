@@ -3,7 +3,7 @@ const nameInput = document.getElementById('name')
 const msg = document.getElementById('msg')
 btn.addEventListener('click', async () => {
     const name = nameInput.Value;
-    const res = await fetch('http://localhost:30007user', {
+    const res = await fetch('http://localhost:3000/user', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({ name })
